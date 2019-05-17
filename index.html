@@ -79,13 +79,13 @@
         speank.hide()
         let result = readHeart()
         speakIndex = 0
-        texts[++textIndex] = '我猜的结果是：' + result
+        texts[++textIndex] = '我猜你心里的符号是：' + result
         setTimeout(function() {
           $('#readHeart').hide()
           $('#printFh').html('')
           speank.show()
           speaking()
-        }, 3000)
+        }, 20000)
         return
       } else {
         speank.html(blessingText)
